@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            background-color: rgb(226,235,244);
+            width: 100%;
+            height: 1000px;
+
+        }
+.content header{
+            background-color: rgb(129,138,147);
+            width: 820px;
+            height: 100px;
+            position: absolute;
+            margin-left: 660px;
+
+
+        }
+.content nav{
+            background-color: rgb(202,214,226);
+            height: 700px;
+            width: 200px;
+            position: absolute;
+            margin-left: 660px;
+            margin-top: 110px;
+
+        }
+.content main{
+            background-color:rgb(255,255,255);
+            width: 600px;
+            height: 700px;
+            position: absolute;
+            margin-top: 110px;
+            margin-left: 880px;
+
+
+
+        }
+.content footer{
+            background-color: rgb(129,138,147);
+            width: 820px;
+            height: 100px;
+            position: absolute;
+            margin-top: 820px;
+            margin-left: 660px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header></header>
+        <nav></nav>
+        <main>
+            <div class="head">輸入書検索</div>
+            <div class="bodyhead">キーワード検索</div>
+            <div class="bodycontent">
+                <form role="search" method="get">
+                    <div class="keyword1">
+                        <div id="text">書名</div>
+                        <div id="textcontent">
+                            <input id="textbutton1" type="text" value="史記"><br>
+                            <input id="textbutton2" type="checkbox">いずれかの語を含む
+                            <input id="textbutton3" type="checkbox">説明文も検討対象とする
+                        </div>
+                    </div>
+                    <div class="keyword2">
+                        <div>編著者名</div>
+                        <input type="text"><br>
+                    </div>
+                    <div class="keyword3">
+                        <div>出版社</div>
+                        <input type="text"><br>
+                    </div>
+                    <div class="keyword4">
+                        <div>ISBN</div>
+                        <input type="text"><br>
+                    </div>
+                    <div class="tips">13桁、もしくは10桁（旧ISBNコード）の半角数字入力してください</div>
+                    <div class="buttonpart">
+                        <div>
+                            <button id="button1" type="submit">検索</button>
+                            <button id="button2" type="reset">クリア</button>
+                        </div>
+                    </div>
+                    <a href="#">検索方法</a>
+                </form>
+            </div>
+            <div class="end">
+                <div class="endhead">その他の条件</div>
+                <div class="endcontent">
+                    <div class="searchcondition1">
+                        <div class="searchkeyword1">
+                            <div>在庫</div>
+                            <select>
+                                <option>入手不可を表示しない</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                        <div class="searchkeyword2">
+                            <div id="searchkeyword2title">出版年</div>
+                            <div id="searchkeyword2content">
+                                <input type="text">年~<input type="text">年
+                            </div>
+                        </div>
+                        <div class="searchkeyword3">
+                            <div>出版地</div>
+                            <select>
+                                <option>指定なし</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="searchcondition2">
+                        <div class="searchkeyword4">
+                            <div>形態</div>
+                            <input type="checkbox" name="1" value="1">辞典
+                            <input type="checkbox" name="2" value="2">年鑑
+                            <input type="checkbox" name="3" value="3">目録
+                            <input type="checkbox" name="4" value="4">CD.DVD
+                            <input type="checkbox" name="5" value="5">マイクロ
+                            <input type="checkbox" name="6" value="6">CD/DVD-ROM
+                        </div>
+
+                    </div>
+                    <div class="searchcondition3">
+                        <div id="title">分野</div>
+                        <div id="td1">
+                            <input type="checkbox" name="1" value="1">総記<br>
+                            <input type="checkbox" name="1" value="1">教育．文化<br>
+                            <input type="checkbox" name="1" value="1">戯劇．電影
+                        </div>
+                        <div id="td2">
+                            <input type="checkbox" name="1" value="1">古代思想<br>
+                            <input type="checkbox" name="1" value="1">武術<br>
+                            <input type="checkbox" name="1" value="1">翻訳文学
+                        </div>
+                        <div id="td3">
+                            <input type="checkbox" name="1" value="1">宗教<br>
+                            <input type="checkbox" name="1" value="1">語学<br>
+                            <input type="checkbox" name="1" value="1">古代史
+                        </div>
+                        <div id="td4">
+                            <input type="checkbox" name="1" value="1">政治<br>
+                            <input type="checkbox" name="1" value="1">古典文学<br>
+                            <input type="checkbox" name="1" value="1">地方史
+                        </div>
+                        <div id="td5">
+                            <input type="checkbox" name="1" value="1">経済<br>
+                            <input type="checkbox" name="1" value="1">近現代文学<br>
+                            <input type="checkbox" name="1" value="1">近現代史
+                        </div>
+                        <div id="td6">
+                            <input type="checkbox" name="1" value="1">総記<br>
+                            <input type="checkbox" name="1" value="1">教育．文化<br>
+                            <input type="checkbox" name="1" value="1">戯劇．電影
+                        </div>
+                        <div id="td7">
+                            <input type="checkbox" name="1" value="1">共産党<br>
+                            <input type="checkbox" name="1" value="1">児童文学<br>
+                            <input type="checkbox" name="1" value="1">考古
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+    </div>
+    </div>
+
+    </main>
+    <footer></footer>
+
+    </div>
+
+</body>
+
+</html>
