@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔵書検索・予約システムの使い方</title>
+    <style>
+        .header {
+            width: 100%;
+            height: 20px;
+            background-color: rgb(5, 121, 0);
+        }
+
+        .webtitle div {
+            float: left;
+            width: 630px;
+            height: 85px;
+        }
+
+        #title img {
+            width: 630px;
+            height: 85px;
+        }
+
+        #titlecontent font {
+            line-height: 85px;
+
+        }
+
+        .intro {
+            width: 100%;
+            height: 40px;
+            background-color: rgb(205, 229, 204);
+            margin-top: 105px;
+        }
+
+        .intro b {
+            font-size: x-large;
+
+        }
+
+        .tips {
+            width: 100%;
+            height: 30px;
+        }
+
+        .contenttitle {
+            width: 100%;
+            height: 20px;
+            margin-top: 165px;
+        }
+
+        .contentimg {
+            width: 818px;
+            height: 1277px;
+        }
+
+        .tablecontent{
+            width: 800px;
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="webtitle">
+        <div id="titleimg">
+            <img src="./img/QQ图片20240123132510.png">
+        </div>
+        <div id="titlecontent">
+            <font size="+3">ヘルプ</font>
+        </div>
+    </div>
+    <div class="intro">
+        <b>検索結果書誌詳細画面</b>
+    </div>
+    <div class="tips">検索結果の書誌の詳しい情報が表示されます。</div>
+    <div id="contenttitle">【画面説明：検索結果書誌詳細画面】</div>
+    <div id="contentimg">
+        <img src="./img/WTifTilDetail.png">
+    </div>
+    <table class="tablecontent" border="1">
+            <tr>
+                <td>
+                    <dl>
+                        <dt><b>① 蔵書情報欄</b>
+                        <dd>「所蔵数」…図書で所蔵しているすべての数<br>
+                            「在庫数」…所蔵数のうち現在図書にある在庫の数（館外貸出ができないものも含む）<br>
+                            「予約数」…次に借りるのを待っている人数<br>
+                            「発注数」…図書館で注文している数<br>
+                            が表示されます。
+                        <dt><b>② 書誌情報欄</b>
+                        <dd>書名・著者名など書誌（タイトル）の主な情報が表示されます。
+                        <dt><b>③ マイ本棚へ追加</b>
+                        <dd><a href="">ログイン</a>している場合、表示している書誌（タイトル）を<a href="">マイ本棚</a>へ追加できます。
+                        <dt><b>④ 資料情報欄</b>
+                        <dd>表示している書誌（タイトル）の所蔵資料が一覧で表示されます。どこの館に所蔵しているかや貸出可能かなどの情報が確認できます。<br>
+                            「帯出区分」…館内からの持ち出し可否を表します。<br>
+                            　　　　　　　　　・貸出可(館外への持ち出しが可能)<br>
+                            　　　　　　　　　・禁帯出(館外への持ち出しは不可)<br>
+                            　　　　　　　　　・禁予約(予約は不可)<br>
+                            　　　　　　　　　・貴重資料(貴重資料のため、館外への持ち出しは不可)<br>
+                            「状態」…資料の現在の状況を表します。<br>
+                            　　　　　　　　　・在庫(在庫があり、資料が図書館にある状態です)<br>
+                            　　　　　　　　　・貸出中(資料は貸出されている状態です)<br>
+                            　　　　　　　　　・展示中(資料を図書館内に展示されている状態です)<br>
+                            　　　　　　　　　・製本中(資料の製本作業を行っている状態です)<br>
+                            　　　　　　　　　・点検中(資料の点検を行っている状態です)<br>
+                            　　　　　　　　　・発注中(資料を注文している状態です)<br>
+                            　　　　　　　　　・修理中(資料の修理作業を行っている状態です)<br>
+                            「貸出」…貸出可否を表します。貸出可能な資料であれば「○」が表示されます。
+                        <dt><b>⑤ 関連資料欄</b>
+                        <dd>表示している書誌（タイトル）と同じ著者・同じ出版年など関連する資料が表示されます。
+                            <br>関連資料をクリックすると、その書誌（タイトル）の書誌詳細画面が表示されます。
+                        <dt><b>⑥ 書誌詳細欄</b>
+                        <dd>表示している書誌（タイトル）の詳しい情報が表示されます。
+                        <dt><b>⑦ 内容細目欄</b>
+                        <dd>内容細目情報（ＣＤの曲名など）が表示されます。
+                        <dt><b>⑧ [前の資料]ボタン</b>
+                        <dd>検索結果に該当した前の資料の書誌詳細画面が表示されます。
+                        <dt><b>⑨ [次の資料]ボタン</b>
+                        <dd>検索結果に該当した次の資料の書誌詳細画面が表示されます。
+                        <dt><b>⑩ [予約カートに入れる]ボタン</b>
+                        <dd>[予約カートに入れる]ボタンをクリックすると、表示している書誌（タイトル）が<a href="">予約カート</a>に登録されます。<br>
+                            ※予約候補となるだけで、予約が完了になるわけではありません。
+                        <dt><b>⑪ [資料請求票印刷]ボタン</b>
+                        <dd>[資料請求票印刷]ボタンをクリックすると、資料請求票印刷用の画面が表示されます。
+                        <dt><b>⑫ [いますぐ予約する]ボタン</b>
+                        <dd>[いますぐ予約する]ボタンをクリックすると、表示している書誌（タイトル）の<a
+                                href="../WYoyConfirm/WYoyConfirm.html#STEP01">予約</a>を行います。
+                    </dl>
+                </td>
+            </tr>
+    </table>
+</body>
+
+</html>
