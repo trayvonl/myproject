@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mycss.css">
+</head>
+<body>
+    <ul class="nav1">
+        <li><a href="">主页</a></li>
+        <li><a href="">分类</a></li>
+        <li><a href="">其他</a></li>
+        <li><a href="">关于</a></li>
+    </ul>
+    <ul class="nav2">
+        <li><a href="">主页</a></li>
+        <li><a href="">分类</a></li>
+        <li><a href="">其他</a></li>
+        <li><a href="" style="float: right;" class="active">关于</a></li>
+    </ul>
+    <div class="div1">
+        <p>这是一个段落</p>
+    </div>
+    <div class="div2"></div>
+    <div class="div3">
+        <a href="">我是a</a>
+    </div>
+    <ul class="unorder">
+        <li>11</li>
+        <li>11</li>
+        <li>11</li>
+    </ul>
+    <ol class="order">
+        <li>11</li>
+        <li>11</li>
+        <li>11</li>
+    </ol>
+    <table>
+        <th>
+            <td>12</td>
+            <td>12</td>
+        </th>
+    </table>
+    <div class="box"></div>
+    <div class="visibility"></div>
+    <div class="display"></div>
+    <div class="overflow">
+        12312321321312<br>
+        21313
+    </div>
+    <div class="center">点我显示悬浮框
+        <span class="centertext">我是悬浮框</span>
+    </div>
+    <div class="menu">
+        <span>教程</span>
+        <div class="menucontent">
+          <p>css</p>
+          <p>html</p>
+        </div>
+      </div>
+</body>
+</html>
