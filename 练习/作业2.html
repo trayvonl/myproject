@@ -1,64 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-.content{
-    background-color: rgb(226,235,244);
-    width: 100%;
-    height: 1000px;
-    
-}
-.content header{
-    background-color: rgb(129,138,147);
-    width: 820px;
-    height: 100px;
-    position: absolute;
-    margin-left: 660px;
+        .content {
+            background-color: rgb(226, 235, 244);
+            width: 100%;
+            height: 1000px;
+
+        }
+
+        .content header {
+            background-color: rgb(129, 138, 147);
+            width: 820px;
+            height: 100px;
+            position: absolute;
+            margin-left: 660px;
 
 
-}
-.content nav{
-    background-color: rgb(202,214,226);
-    height: 700px;
-    width: 200px;
-    position: absolute;
-    margin-left: 660px;
-    margin-top: 110px;
+        }
 
-}
-.content main{
-    background-color:rgb(255,255,255);
-    width: 600px;
-    height: 700px;
-    position: absolute;
-    margin-top: 110px;
-    margin-left: 880px;
-    
-    
-    
-}
-.content footer{
-    background-color: rgb(129,138,147);
-    width: 820px;
-    height: 100px;
-    position: absolute;
-    margin-top: 820px;
-    margin-left: 660px;
+        .content nav {
+            background-color: rgb(202, 214, 226);
+            height: 700px;
+            width: 200px;
+            position: absolute;
+            margin-left: 660px;
+            margin-top: 110px;
 
-}
+        }
+
+        .content main {
+            background-color: rgb(255, 255, 255);
+            width: 600px;
+            height: 700px;
+            position: absolute;
+            margin-top: 110px;
+            margin-left: 880px;
+
+
+
+        }
+
+        .content footer {
+            background-color: rgb(129, 138, 147);
+            width: 820px;
+            height: 100px;
+            position: absolute;
+            margin-top: 820px;
+            margin-left: 660px;
+
+        }
+
+        .head {
+            width: 600px;
+            height: 20px;
+            background-color: rgb(234, 234, 234);
+        }
+
+        .bodyhead {
+            width: 580px;
+            height: 20px;
+            background-color: rgb(240, 213, 98);
+            margin: auto;
+        }
+
+        .bodycontent {
+            width: 600px;
+            height: 250px;
+        }
+
+        .foottitle {
+            width: 580px;
+            height: 20px;
+        }
+
+        .foot1 {
+            width: 580px;
+            height: 40px;
+        }
+
+        .foot2 {
+            width: 580px;
+            height: 40px;
+        }
+
+        .foot3 {
+            width: 580px;
+            height: 150px;
+
+        }
+
+        .bodycontent .div1 {
+            background-color: rgb(239, 236, 202);
+            width: 250px;
+            height: 20px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .div1 input {
+            height: 10px;
+            width: 150px;
+            line-height: 10px;
+            margin-left: 80px;
+        }
+
+        .tips {
+            background-color: rgb(245, 254, 254);
+            width: 600px;
+            height: 30px;
+            text-align: center;
+            font-size: xx-small;
+            color: red;
+        }
+
+        .button {
+            width: 600px;
+            height: 50px;
+        }
+
+        .button button[type="submit"] {
+            background-color: rgb(100, 138, 189);
+            color: white;
+            margin-left: 250px;
+        }
+
+        .button a {
+            margin-left: 270px;
+        }
+
+        .foottitle {
+            width: 580px;
+            height: 20px;
+            background-color: rgb(239, 212, 95);
+            margin: auto;
+        }
+
+        .foot1 {
+            float: left;
+            width: 580px;
+            height: 30px;
+            padding-left: 10px;
+        }
+        .invotery{
+            float: left;
+            width: 200px;
+            height: 30px;
+            background-color: rgb(239, 236, 202);
+        }
+        .date{
+            float: left;
+            width: 200px;
+            height: 30px;
+            background-color: rgb(239, 236, 202);
+            margin-left: 20px;
+        }
+        .area{
+            float: left;
+            width: 100px;
+            height: 30px;
+            background-color: rgb(239, 236, 202);
+            margin-left: 20px;
+        }
+        .invoterytitle{
+            float: left;
+            width: 50px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .invoterycontent{
+            float: left;
+            width: 150px;
+            height: 30px;
+        }
+        .invoterycontent select{
+            width: 120px;
+            height: 25px;
+            line-height: 25px;
+        }
+        .datetitle{
+            float: left;
+            width: 50px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .datecontent{
+            float: left;
+            width: 150px;
+            height: 30px;
+            
+        }
+        .datecontent input{
+            width: 40px;
+            height: 20px;
+        }
+        .areatitle{
+            float: left;
+            width: 40px;
+            height: 30px;
+            font-size: small;
+            line-height: 30px;
+        }
+        .areacontent{
+            float: left;
+            width: 60px;
+            height: 30px;
+        }
+        .areacontent select{
+            width: 50px;
+            height: 25px;
+        }
+        .foot2 {
+            width: 580px;
+            height: 30px;
+            padding-left: 10px;
+            margin-top: 40px;
+        }
+        .morphology{
+            width: 400px;
+            height: 30px;
+            background-color: rgb(239, 236, 202);
+        }
+        .morphologytitle{
+            float: left;
+            width: 50px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .morphologycontent{
+            float: left;
+            width: 350px;
+            height: 30px;
+        }
+        .morphologycontent input{
+            width: 5px;
+            height: 15px;
+        }
+        .foot3{
+            width: 580px;
+            padding-left: 10px;
+            height: 150px;
+            background-color: rgb(239, 236, 202);
+            margin-top: 20px;
+        }
+        .fieldtitle{
+            float: left;
+            height: 150px;
+            width: 20px;
+            font-size: xx-small;
+            margin-top: 100px;
+        }
+        .fieldcontent{
+            float: left;
+            height: 150px;
+            width: 560px;
+            font-size: x-small;
+        }
+        .fieldcontent input{
+            width: 10px;
+            height: 10px;
+            margin-top: 30px;
+        }
+        #td1{
+            float: left;
+            height: 150px;
+            width: 80px;
+        }
+        #td2{
+            float: left;
+            height: 150px;
+            width: 80px;
+        }
+        #td3{
+            float: left;
+            height: 150px;
+            width: 80px;
+        }
+        #td4{
+            float: left;
+            height: 150px;
+            width: 80px;
+        }
+        #td5{
+            float: left;
+            height: 150px;
+            width: 80px;
+        }  
+        #td6{
+            float: left;
+            height: 150px;
+            width: 80px;
+        }  
+        #td7{
+            float: left;
+            height: 150px;
+            width: 80px;
+        }  
+
     </style>
 </head>
+
 <body>
     <div class="content">
         <header></header>
         <nav></nav>
-        <main></main>
+        <main>
+            <div class="head">輸入書検索</div>
+            <div class="bodyhead">キーワード検索</div>
+            <div class="bodycontent">
+                <div class="div1">
+                    <input type="text" value="史記">
+                </div>
+                <div class="div1">
+                    <input type="text">
+                </div>
+                <div class="div1">
+                    <input type="text">
+                </div>
+                <div class="div1">
+                    <input type="text">
+                </div>
+                <div class="tips">
+                    13桁、もしくは10桁(旧ISBNコード)の半角数字入力してください
+                </div>
+                <div class="button">
+                    <button type="submit">検索</button>
+                    <button type="reset">クリア</button>
+                    <a href="#">検索方法</a>
+                </div>
+            </div>
+            <div class="foottitle">
+                その他の条件
+            </div>
+            <div class="foot1">
+                <div class="invotery">
+                    <div class="invoterytitle">在庫</div>
+                    <div class="invoterycontent">
+                        <select>
+                            <option>入手不可を表示しない</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="date">
+                    <div class="datetitle">出版年</div>
+                    <div class="datecontent" style="font-size: xx-small;">
+                        <input type="text">年~<input type="text">年
+                    </div>
+                </div>
+                <div class="area">
+                    <div class="areatitle">出版地</div>
+                    <div class="areacontent">
+                        <select>
+                            <option>指定なし</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="foot2">
+                <div class="morphology">
+                    <div class="morphologytitle">形態</div>
+                    <div class="morphologycontent" style="font-size: xx-small;">
+                        <input type="checkbox" name="1" value="1">辞典
+                            <input type="checkbox" name="2" value="2">年鑑
+                            <input type="checkbox" name="3" value="3">目録
+                            <input type="checkbox" name="4" value="4">CD.DVD
+                            <input type="checkbox" name="5" value="5">マイクロ
+                            <input type="checkbox" name="6" value="6">CD/DVD-ROM
+                    </div>
+                </div>
+                <div class="foot3">
+                    <div class="fieldtitle">分野</div>
+                    <div class="fieldcontent">
+                        <div id="td1">
+                            <input type="checkbox" name="1" value="1">総記<br>
+                            <input type="checkbox" name="1" value="1">教育．文化<br>
+                            <input type="checkbox" name="1" value="1">戯劇．電影
+                        </div>
+                        <div id="td2">
+                            <input type="checkbox" name="1" value="1">古代思想<br>
+                            <input type="checkbox" name="1" value="1">武術<br>
+                            <input type="checkbox" name="1" value="1">翻訳文学
+                        </div>
+                        <div id="td3">
+                            <input type="checkbox" name="1" value="1">宗教<br>
+                            <input type="checkbox" name="1" value="1">語学<br>
+                            <input type="checkbox" name="1" value="1">古代史
+                        </div>
+                        <div id="td4">
+                            <input type="checkbox" name="1" value="1">政治<br>
+                            <input type="checkbox" name="1" value="1">古典文学<br>
+                            <input type="checkbox" name="1" value="1">地方史
+                        </div>
+                        <div id="td5">
+                            <input type="checkbox" name="1" value="1">経済<br>
+                            <input type="checkbox" name="1" value="1">近現代文学<br>
+                            <input type="checkbox" name="1" value="1">近現代史
+                        </div>
+                        <div id="td6">
+                            <input type="checkbox" name="1" value="1">総記<br>
+                            <input type="checkbox" name="1" value="1">教育．文化<br>
+                            <input type="checkbox" name="1" value="1">戯劇．電影
+                        </div>
+                        <div id="td7">
+                            <input type="checkbox" name="1" value="1">共産党<br>
+                            <input type="checkbox" name="1" value="1">児童文学<br>
+                            <input type="checkbox" name="1" value="1">考古
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
         <footer></footer>
 
     </div>
-    
+
 </body>
+
 </html>
