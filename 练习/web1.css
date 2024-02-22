@@ -1,0 +1,700 @@
+.header{
+    width: 100%;
+    height: 80px;
+}
+.header-logo{
+    float: left;
+    width: 200px;
+    height: 80px;
+    margin-left: 100px;
+}
+.header-logo img{
+    width: 200px;
+    height: 80px;
+}
+.header-nav{
+    float: left;
+    width: 400px;
+    height: 80px;
+    margin-left: 600px;
+}
+.lang{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 40px;
+}
+.lang li{
+    float: right;
+    font-size: small;
+}
+.lang a{
+    text-decoration: none;
+    color:rgb(127,127,127);
+}
+.nav{
+    position: relative;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 60px;
+}
+.nav li{
+    float: right;
+    font-size: small;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover{
+    color: rgb(127,127,127);
+
+}
+.buyhouse-content{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+.buyhouse-content ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.buyhouse-content a{
+    display: block;
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    border: 1px solid white;
+}
+.buyhouse:hover .buyhouse-content{ 
+    display: inline-block;
+}
+.connect{
+    float: right;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.connect:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.contentbody{
+    height: 500px;
+    width: 100%;
+}
+.contentnav{
+    float: left;
+    height: 500px;
+    width: 400px;
+    background-color: red;
+}
+.contentnav-title{
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    font-size: larger;
+    text-indent: 20px;
+}
+.check{
+    width: 400px;
+    height: 80px;
+    line-height: 100px;
+}
+.check a{
+    float: left;
+    display: block;
+    width: 150px;
+    height:50px;
+    background-color:rgb(1,64,153);
+    text-align: center;
+    border: 1px;
+    border-right-style:solid;
+    border-color: white;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+}
+#a1{
+    margin-left:20px;
+}
+.check a:hover{
+    background-color: white;
+    color: black;
+}
+.place{
+    width: 400px;
+    height: 50px;
+    line-height: 100px;
+}
+.place p{
+    float: left;
+    width: 280px;
+    height: 50px;
+    border-bottom-style: solid;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: x-small;
+    margin-left: 20px;
+}
+.place button{
+    float: left;
+    width:100px;
+    height: 35px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: white;
+}
+.budget{
+    width: 400px;
+    height: 50px;
+    line-height: 100px;
+}
+.budget select{
+    width: 350px;
+    height: 50px;
+    color: rgb(127,127,127);
+    margin-left: 25px;
+}
+.highsearch{
+    width: 400px;
+    height: 50px;
+    margin-top: 100px;
+    text-align: center;
+}
+.highsearch a{
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+.search{
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+
+}
+.search button{
+    width: 350px;
+    height: 50px;
+    background-color: rgb(144,142,143);
+    margin-left: 25px;
+    color: white;
+    font-size: large;
+}
+.image{
+    float: left;
+    width: 1100px;
+    height: 500px;
+
+}
+.tips{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(225,228,229);
+    margin-top: 20px;
+}
+.tips p{
+    width: 100px;
+    background-color: red;
+    margin-left: 200px;
+}
+.rectitle{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    color: red;
+    font-size:xx-large;
+    text-align: center;
+    line-height: 150px;
+}
+.reccontent{
+    width: 100%;
+    height: 820px;
+}
+.bigimg{
+    width: 1027px;
+    height: 340px;
+    margin-left: 250px;
+}
+.midimgleft{
+    width: 509px;
+    height: 200px;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+.midimgright{
+    width: 509px;
+    height: 200px;
+
+}
+.smallimg1{
+    width: 255px;
+    height: 210px;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+.smallimg2{
+    width: 255px;
+    height: 210px;
+    margin-top: 20px;
+}
+.smallimg3{
+    width: 255px;
+    height: 210px;
+    margin-top: 20px;
+}
+.smallimg4{
+    width: 255px;
+    height: 210px;
+    margin-top: 20px;
+}
+.news{
+
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(246,246,246);
+}
+.newstitle{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    color: red;
+    font-size:xx-large;
+    text-align: center;
+    line-height: 150px;
+}
+.news1{
+    float: left;
+    width: 280px;
+    height: 400px;
+    margin-left: 250px;
+    background-color: white;
+}
+.news1 img{
+    width: 280px;
+    height: 219px;
+    background-repeat: no-repeat;
+}
+.news1 span{
+    display: inline-block;
+    width: 78px;
+    height: 18px;
+    background-color: rgb(46,203,113);
+    color: white;
+    border-radius: 6px;
+    font-size: x-small;
+    text-align: center;
+}
+.newscontent1{
+    width: 172px;
+    height: 100px;
+    float: right;
+}
+.newsbutton1{
+    width: 280px;
+    height: 80px;
+    margin-top: 75px;
+}
+.newsbutton1 button{
+    width: 196px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 40px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.newsbutton1 button:hover{
+    background-color: rgb(193,25,38);
+}
+.news2{
+    float: left;
+    width: 280px;
+    height: 400px;
+    margin-left: 20px;
+    background-color:white;
+}
+.news2 img{
+    width: 280px;
+    height: 219px;
+    background-repeat: no-repeat;
+}
+.news2 span{
+    display:inline-block;
+    width: 78px;
+    height: 18px;
+    background-color: rgb(46,203,113);
+    color: white;
+    border-radius: 6px;
+    font-size: x-small;
+    text-align: center;
+}
+.newscontent2{
+    width: 172px;
+    height: 100px;
+    float: right;
+}
+.newsbutton2{
+    width: 280px;
+    height: 80px;
+    margin-top: 75px;
+}
+.newsbutton2 button{
+    width: 196px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 40px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.newsbutton2 button:hover{
+    background-color: rgb(193,25,38);
+}
+.news3{
+    float: left;
+    width: 280px;
+    height: 400px;
+    margin-left: 20px;
+    background-color:white;
+}
+.news3 img{
+    width: 280px;
+    height: 219px;
+    background-repeat: no-repeat;
+}
+.news3 span{
+    display:inline-block;
+    width: 78px;
+    height: 18px;
+    background-color: rgb(46,203,113);
+    color: white;
+    border-radius: 6px;
+    font-size: x-small;
+    text-align: center;
+}
+.newscontent3{
+    width: 172px;
+    height: 100px;
+    float: right;
+}
+.newsbutton3{
+    width: 280px;
+    height: 80px;
+    margin-top: 75px;
+}
+.newsbutton3 button{
+    width: 196px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 40px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.newsbutton3 button:hover{
+    background-color: rgb(193,25,38);
+}
+.news4{
+    float: left;
+    width: 280px;
+    height: 400px;
+    margin-left: 20px;
+    background-color:white;
+}
+.news4 img{
+    width: 280px;
+    height: 219px;
+    background-repeat: no-repeat;
+}
+.news4 span{
+    display:inline-block;
+    width: 78px;
+    height: 18px;
+    background-color: rgb(46,203,113);
+    color: white;
+    border-radius: 6px;
+    font-size: x-small;
+    text-align: center;
+}
+.newscontent4{
+    width: 172px;
+    height: 100px;
+    float: right;
+}
+.newsbutton4{
+    width: 280px;
+    height: 80px;
+    margin-top: 75px;
+}
+.newsbutton4 button{
+    width: 196px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 40px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.newsbutton4 button:hover{
+    background-color: rgb(193,25,38);
+}
+.searchmore{
+    width: 100%;
+    height: 50px;
+    margin-top: 400px;
+    line-height: 100px;
+}
+.searchmore button{
+    width: 196px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 730px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.searchmore button:hover{
+    background-color: rgb(193,25,38);
+}
+.soldtitle{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    color: red;
+    font-size:xx-large;
+    text-align: center;
+    line-height: 150px;
+}
+.buyandsell{
+    width: 100%;
+    height: 350px;
+}
+.buy{
+    float: left;
+    width: 700px;
+    height: 300px;
+    margin-left: 20px;
+}
+.buytitle{
+    float: left;
+    width: 250px;
+    height: 300px;
+    color: white;
+    background-color: rgb(193,25,38);
+}
+.buymessage{ 
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+.buybu{
+    width: 250px;
+    height: 100px;
+}
+.buybu button{
+    width: 160px;
+    height: 60px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.buyimg{
+    float: left;
+    width: 450px;
+    height: 300px;
+    background-color: red;
+
+}
+.buyimg img{
+    width: 450px;
+    height: 300px;
+
+}.sell{
+    float: left;
+    width: 700px;
+    height: 300px;
+    margin-left: 20px;
+}
+.selltitle{
+    float: left;
+    width: 250px;
+    height: 300px;
+    color: white;
+    background-color: rgb(193,25,38);
+}
+.sellmessage{ 
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+.sellbu{
+    width: 250px;
+    height: 100px;
+}
+.sellbu button{
+    width: 160px;
+    height: 60px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.sellimg{
+    float: left;
+    width: 450px;
+    height: 300px;
+    background-color: red;
+
+}
+.sellimg img{
+    width: 450px;
+    height: 300px;
+
+}
+.telephone{
+    width: 100%;
+    height: 800px;
+}
+.teletitle{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    color: red;
+    font-size:xx-large;
+    text-align: center;
+    line-height: 150px;
+}
+.tele1{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(246,246,246);
+    margin-left: 150px;
+}
+.tele1 h1{
+    color: red;
+    font-size: small;
+    text-align: center;
+}
+.tele1 h2{
+    text-align: center;
+}
+.tele2{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(246,246,246);
+    margin-left: 10px;
+}
+.tele2 h1{
+    color: red;
+    font-size: small;
+    text-align: center;
+}
+.tele2 h2{
+    text-align: center;
+}
+.tele3{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(246,246,246);
+    margin-left: 10px;
+}
+.tele3 h1{
+    color: red;
+    font-size: small;
+    text-align: center;
+}
+.tele3 h2{
+    text-align: center;
+}
+.tele4{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(246,246,246);
+    margin-left: 10px;
+}
+.tele4 h1{
+    color: red;
+    font-size: small;
+    text-align: center;
+}
+.tele4 h2{
+    text-align: center;
+}
+.tele5{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(246,246,246);
+    margin-left: 10px;
+}
+.tele5 h1{
+    color: red;
+    font-size: small;
+    text-align: center;
+}
+.tele5 h2{
+    text-align: center;
+}
+.time{
+    width: 1300px;
+    height: 20px;
+    margin-top: 110px;
+    margin-left: 150px;
+    background-color: rgb(246,246,246);
+    text-align: center;
+}
+.emailtitle{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    color: black;
+    font-size:large;
+    text-align: center;
+    line-height: 150px;
+}
+.email{
+    width: 1300px;
+    height: 80px;
+    margin-left: 150px;
+    background-color: rgb(246,246,246);
+}
+.email button{
+    width: 500px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+.email button:hover{
+    background-color: rgb(193,25,38);
+}
+.emailbutt1{
+    margin-left: 150px;
+}
+.emailbutt2{
+    margin-left: 20px;
+}
