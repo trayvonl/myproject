@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.header{
+    width: 100%;
+    background-color: white;
+    height: 80px;
+}
+.header img{
+    width: 329px;
+    height: 70px;
+    margin-left: 200px;
+}
+.htmlcontent{
+    position: relative;
+    width: 100%;
+    height: 3000px;
+    background-color: rgb(245,245,245);
+
+}
+.logbody{
+    position: absolute;
+    margin-top: 40px;
+    width: 950px;
+    height: 2960px;
+    margin-left: 200px;
+    background-color: white;
+}
+.logtitle{
+    width: 930px;
+    height: 50px;
+    margin-left: 10px;
+    border-bottom: 5px solid rgb(245,245,245);
+}
+.logtips{
+    width: 930px;
+    height: 30px;
+    margin-left: 10px;
+}
+.login{
+    float: left;
+    width: 950px;
+    height: 390px;
+}
+.loginleft{
+    float: left;
+    margin-left: 10px;
+    width: 450px;
+    height: 390px;
+    border: 4px solid rgb(234,234,234);
+}
+.loginleft h2{
+    width: 430px;
+    height: 56px;
+    margin-left: 10px;
+    border-bottom: 4px solid rgb(245,245,245);
+}
+.loginlefttips{
+    width: 430px;
+    height: 16px;
+    margin-left: 10px;
+    font-size: xx-small;
+    text-align: center;
+    line-height: 16px;
+}
+.loginleftbox{
+    width: 430px;
+    height: 122px;
+    margin-left: 10px;
+}
+.logtbhead{
+    width: 130px;
+    height: 66px;
+    background-color: rgb(233,233,233);
+}
+.logtbbody{
+    width: 300px;
+    height: 66px;
+    background-color: rgb(243,243,243);
+}
+.logtbbody input{
+    width: 210px;
+    height: 25px;
+}
+.radiobox{
+    width: 410px;
+    height: 18px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.loginbu{
+    margin-top:20px;
+    width: 420px;
+    height: 67px;
+}
+.loginbu button{
+    width: 274px;
+    height: 39px;
+    margin-left: 73px;
+    background-color: rgb(254,222,51);
+}
+.loginri{
+    float: left;
+    margin-left: 10px;
+    width: 450px;
+    height: 390px;
+    border: 4px solid rgb(234,234,234);
+}
+.loginri h2{
+    width: 430px;
+    height: 56px;
+    margin-left: 10px;
+    border-bottom: 4px solid rgb(245,245,245);
+}
+.loginritips{
+    width: 430px;
+    height: 16px;
+    margin-left: 10px;
+    font-size: xx-small;
+    text-align: center;
+    line-height: 16px;
+}
+.loginritbox{
+    width: 430px;
+    height: 122px;
+    margin-left: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="./tc img/header_logo001.png">
+
+    </div>
+    <div class="htmlcontent">
+        <div class="logbody">
+            <div class="logtitle">
+            <h1>ログイン</h1>
+        </div>
+        <div class="logtips">
+            タイムズカー会員様はタイムズカー 会員カード番号（IC管理番号）でもログインが出来るようになりました。
+        </div>
+        <div class="login">
+            <div class="loginleft">
+                <h2>タイムズクラブ ログインIDでログイン</h2>
+                <div class="loginlefttips">タイムズクラブのIDをお持ちの方</div>
+                <div class="loginleftbox">
+                    <form>
+                        <table>
+                            <tr>
+                                <td class="logtbhead">ログインID
+                                    （メールアドレス）</td>
+                                <td class="logtbbody">
+                                    <input type="text" value="メールアドレス">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="logtbhead">パスワード</td>
+                                <td class="logtbbody">
+                                    <input type="password" value="パスワード">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="radiobox">
+                    <input type="radio">次回ログインからログインIDを省略する
+                </div>
+                <div class="loginbu">
+                    <button type="submit">ログイン</button>
+                </div>
+            </div>
+           
+            <div class="loginri">
+                <h2>タイムズカー 会員カード番号でログイン</h2>
+                <div class="loginritips">カーシェアリングのタイムズカーの会員の方（個人会員のみ）</div>
+                <div class="loginribox">
+                    <form>
+                        <table>
+                            <tr>
+                                <td class="logtbhead">会員カード番号
+                                    （IC管理番号）</td>
+                                <td class="logtbbody">
+                                    <input type="text" value="メールアドレス">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="logtbhead">パスワード</td>
+                                <td class="logtbbody">
+                                    <input type="password" value="パスワード">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="radiobox">
+                    <input type="radio">次回から会員カード番号を省略
+                </div>
+                <div class="loginbu">
+                    <button type="submit">ログイン</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
