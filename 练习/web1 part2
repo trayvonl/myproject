@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+    width: 100%;
+    height: 80px;
+}
+.header-logo{
+    float: left;
+    width: 200px;
+    height: 80px;
+    margin-left: 100px;
+}
+.header-logo img{
+    width: 200px;
+    height: 80px;
+}
+.header-nav{
+    float: left;
+    width: 400px;
+    height: 80px;
+    margin-left: 600px;
+}
+.lang{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 40px;
+}
+.lang li{
+    float: right;
+    font-size: small;
+}
+.lang a{
+    text-decoration: none;
+    color:rgb(127,127,127);
+}
+.nav{
+    position: relative;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 60px;
+}
+.nav li{
+    float: right;
+    font-size: small;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover{
+    color: rgb(127,127,127);
+
+}
+.buyhouse-content{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+.buyhouse-content ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.buyhouse-content a{
+    display: block;
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    border: 1px solid white;
+}
+.buyhouse:hover .buyhouse-content{ 
+    display: inline-block;
+}
+.connect{
+    float: right;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.connect:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.htmlbody{
+    width: 100%;
+    height: 6000px;
+    background-color: rgb(246,246,246);
+}
+.content{
+    width: 1300px;
+    height: 700px;
+    background-color: white;
+    margin-left: 150px;
+
+}
+.content img{
+    float: left;
+}
+.content h1{
+    float: left;
+}
+.headarea{
+    width: 1300px;
+    height: 60px;
+
+}
+.iconarea{
+    float: left;
+    width: 1300px;
+    height: 60px;
+
+}
+.iconarea span{
+    display: inline-block;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    
+}
+#span1{
+    margin-left: 50px;
+}
+#span2{
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(15,43,120);
+}
+.houseimgle{
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 400px;
+    margin-left: 50px;
+}
+.houseimgle img{
+    width: 400px;
+    height: 400px;
+}
+.lleft{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    margin-top: 250px;
+}
+.lleft img{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+.rright{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    margin-left: 360px;
+    margin-top: 250px;
+}
+.rright img{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+.houseimgri{
+    float: left;
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+.houseimgri img{
+    width: 400px;
+    height: 400px;
+}
+.message{
+    width: 1300px;
+    background-color:white;
+    height: 1200px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.message table{
+    font-size: small;
+}
+.tbhead{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(246,246,246);
+    border: 1px solid rgb(246,246,246);
+}
+.tbheadhalf{
+    width: 350px;
+    height: 100px;
+    border: 1px solid rgb(246,246,246);
+    border-left: none;
+    border-right: none;
+}
+.tbbody{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(246,246,246);
+    border: 1px solid rgb(246,246,246);
+}
+.tbbodyhalf{
+    width: 350px;
+    height: 50px;
+    border: 1px solid rgb(246,246,246);
+    border-left: none;
+    border-right: none;
+}
+.moremessage{
+    width: 1300px;
+    height: 400px;
+    background-color: white;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.message1{
+    width: 1300px;
+    height: 400px;
+}
+.message2{
+    width: 1300px;
+    height: 800px;
+    background-color: red;
+    
+}
+.message1 table{
+    font-size: small;
+}
+.tbbodyall{
+    width: 1100px;
+    height: 50px;
+    border: 1px solid rgb(246,246,246);
+    border-left: none;
+    border-right: none;
+}
+.displaybu{
+    width: 1300px;
+    height: 60px;
+    margin-top: 20px;
+}
+.displaybu button{
+    width: 196px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 500px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+
+}
+.displaybu button:hover{
+    background-color: rgb(193,25,38);
+}
+.message2 button{
+    width: 196px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 500px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-top: 750px;
+}
+.message2 button:hover{
+    background-color: rgb(193,25,38);
+}
+    </style>
+        <script>
+            function  showcontent() { 
+                var hiddencontent=document.getElementsByClassName("message2").style.display;
+                if (hiddencontent=="none"){
+                    document.getElementsByClassName("message2").style.display="block";
+                }
+             }
+        </script>
+</head>
+<div>
+    <div class="header">
+        <div class="header-logo">
+            <img src="./mitsui img/QQ图片20240216164902.png">
+        </div>
+        <div class="header-nav">
+                <ul class="lang">
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li>
+                        <a href="#">简体字/</a>
+                    </li>
+                    <li>
+                        <a href="#">繁体字/</a>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+                    <li>
+                        <a href="#">关于我们/</a>
+                    </li>
+                    <li>
+                        <a href="#">指南/</a>
+                    </li>
+                    <li>
+                        <a href="#">卖房/</a>
+                    </li>
+                    <li>    
+                        <a class="buyhouse" href="#">买房/</a>
+                    </li>
+                    <li>
+                        <a href="#">TOP/</a>
+                    </li>
+                </ul>
+                <div class="buyhouse-content">
+                    <ul>
+                        <li>
+                            <a href="#" ></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <a class="connect" href="#">
+                购买/销售咨询
+            </a>  
+            </div>
+            <div class="htmlbody">
+            <div class="content">
+                <div class="headarea">
+                <img class="newcount" src="./mitsui img2/QQ图片20240221115221.png">
+                <h1>Park Court青山The Tower</h1>
+                    </div>
+                    <div class="iconarea">
+                        <span id="span1">公寓</span>
+                        <span id="span2">带租约投资房产</span>
+                    </div>
+                    <div class="houseimgle">
+                        <img id="imgs" src="./mitsui img2/358673485_pcLongHight.jpg">
+                        <div class="lleft">
+                            <img src="./mitsui img2/OIP-C.jpg" alt="无法显示">           
+                        </div>
+                        <div class="rright">
+                            <img src="./mitsui img2/OIP-C2.jpg" alt="无法显示">
+                        </div>
+                    </div>
+                    <script>
+                        var index=0;
+                        var imgdata=['./mitsui img2/358673485_pcLongHight.jpg','./mitsui img2/358673486_pcLongHight.jpg']
+                        var rright=document.getElementsByClassName("rright")[0];
+        var lleft=document.getElementsByClassName("lleft")[0];
+        var img=document.getElementById("imgs");
+        rright.onclick=function(){
+            index++;
+            if(index==imgdata.length) index=0;
+            img.setAttribute('src',imgdata[index]);
+        }
+        lleft.onclick=function(){
+            if(index==0) index=imgdata.length;
+            index--;
+            img.setAttribute('src',imgdata[index]);
+        }
+                    </script>
+                    <div class="houseimgri">
+                        <img src="./mitsui img2/358673476.jpg">
+                    </div> 
+            </div>
+            <div class="message">
+                <table>
+                    <tr>
+                        <td class="tbhead">价格</td>
+                        <td class="tbheadhalf">800,000，000日元</td>
+                        <td class="tbhead">所在地</td>
+                        <td class="tbheadhalf">东京都港区南青山2丁目</td>
+                    </tr>
+                    <tr>
+                        <td class="tbhead" style="border-top: none; border-bottom: none">交通</td>
+                        <td class="tbheadhalf" style="font-size: small;border-top: none; border-bottom: none;">东京地铁线银座线青山一丁目站步行3分钟
+                            都营大江户线青山一丁目站步行3分钟
+                            东京地铁线半藏门线青山一丁目站步行3分钟</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">管理费</td>
+                        <td class="tbbodyhalf">105,600日元/月</td>
+                        <td class="tbbody">维修基金</td>
+                        <td class="tbbodyhalf">17,710日元/月</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">管理费</td>
+                        <td class="tbbodyhalf">105,600日元/月</td>
+                        <td class="tbbody">维修基金</td>
+                        <td class="tbbodyhalf">17,710日元/月</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">其他费用</td>
+                        <td class="tbbodyhalf">贮藏室使用费2,400日元/月，网络2,420日元/月</td>
+                        <td class="tbbody">房屋类型</td>
+                        <td class="tbbodyhalf">公寓</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody" style="border-top: none; border-bottom: none">建筑年</td>
+                        <td class="tbbodyhalf" style="font-size: small;border-top: none; border-bottom: none;">2017年12月築(築6年)</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody" style="border-top: none; border-bottom: none">总楼层数</td>
+                        <td class="tbbodyhalf" style="font-size: small;border-top: none; border-bottom: none;">19楼/地上26楼地下1阶建</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody" style="border-top: none; border-bottom: none">朝向</td>
+                        <td class="tbbodyhalf" style="font-size: small;border-top: none; border-bottom: none;">南</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody" style="border-top: none; border-bottom: none">阳台面积</td>
+                        <td class="tbbodyhalf" style="font-size: small;border-top: none; border-bottom: none;">-</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">现状</td>
+                        <td class="tbbodyhalf">正在出租</td>
+                        <td class="tbbody">停车场</td>
+                        <td class="tbbodyhalf">无</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">建筑物结构</td>
+                        <td class="tbbodyhalf">钢筋混凝土构造</td>
+                        <td class="tbbody">总户数</td>
+                        <td class="tbbodyhalf">163户</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">管理公司</td>
+                        <td class="tbbodyhalf">三井不动产Residential Service株式会社</td>
+                        <td class="tbbody">管理形式</td>
+                        <td class="tbbodyhalf">全部委託</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">管理员的勤务形态</td>
+                        <td class="tbbodyhalf">日班</td>
+                        <td class="tbbody">分售公司</td>
+                        <td class="tbbodyhalf">三井不动产RESIDENTIAL株式会社其他(开发商)</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">
+                            施工公司</td>
+                        <td class="tbbodyhalf">
+                            株式会社大林组</td>
+                        <td class="tbbody">设计公司</td>
+                        <td class="tbbodyhalf">株式会社大林组一级建筑师事务所</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">土地权利</td>
+                        <td class="tbbodyhalf">
+                            所有权</td>
+                        <td class="tbbody">交屋时间/可入住时间</td>
+                        <td class="tbbodyhalf">需讨论</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody">交易方式</td>
+                        <td class="tbbodyhalf">中介</td>
+                        <td class="tbbody">更新日</td>
+                        <td class="tbbodyhalf">2024年2月15日</td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody" style="border-top: none; border-bottom: none">下期更新日期</td>
+                        <td class="tbbodyhalf" style="font-size: small;border-top: none; border-bottom: none;">2024年2月29日
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tbbody" style="border-top: none; border-bottom: none">备注</td>
+                        <td class="tbbodyhalf" style="font-size: small;border-top: none; border-bottom: none;">正在出租(租赁合同需交接)
+                            正在出租(租赁合同需交接)</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="moremessage">
+                <div class="message1">
+                    <table>
+                        <tr>
+                            <td class="tbbody" >设备</td>
+                            <td class="tbbodyall" >地板暖气，影像对讲机，垃圾处理器，走入式鞋柜，更衣间</td>
+                        </tr>
+                        <tr>
+                            <td class="tbbody" >公共设备</td>
+                            <td class="tbbodyall" s>24小时可外出丢垃圾</td>
+                        </tr>
+                        <tr>
+                            <td class="tbbody" >停车场</td>
+                            <td class="tbodyall" >停车场100%</td>
+                        </tr>
+                        <tr>
+                            <td class="tbbody" >特徴</td>
+                            <td class="tbbodyall" >管理员常驻，无障碍</td>
+                        </tr>
+                    </table>
+                    <div class="displaybu">
+                        <button onclick="showcontent" id="displaybutt" type="button">查看评论</button>
+                    </div>
+                </div>
+                <div class="message2" style="display: none;">
+                    <button id="hiddenbutt">收起</button>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
