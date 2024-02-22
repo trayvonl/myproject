@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./mitsui1.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="./mitsui img/QQ图片20240216164902.png">
+        </div>
+        <div class="header-nav">
+                <ul class="lang">
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li>
+                        <a href="#">简体字/</a>
+                    </li>
+                    <li>
+                        <a href="#">繁体字/</a>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+                    <li>
+                        <a href="#">关于我们/</a>
+                    </li>
+                    <li>
+                        <a href="#">指南/</a>
+                    </li>
+                    <li>
+                        <a href="#">卖房/</a>
+                    </li>
+                    <li>    
+                        <a class="buyhouse" href="#">买房/</a>
+                    </li>
+                    <li>
+                        <a href="#">TOP/</a>
+                    </li>
+                </ul>
+                <div class="buyhouse-content">
+                    <ul>
+                        <li>
+                            <a href="#" ></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <a class="connect" href="#">
+                购买/销售咨询
+            </a>  
+            </div>
+        <div class="contentbody">
+            <div class="contentnav">
+                <div class="contentnav-title">快速搜索 选一个！</div>
+                <div class="check">
+                    <a id="a1" href="#">自住</a>
+                    <a href="#">投资</a>
+                </div>
+                <div class="place">
+                    <p>千代田区，中央区，港区，新宿区，涉谷区</p>
+                    <button type="submit">选择地点</button>
+                </div>
+                <div class="budget">
+                    <select>
+                        <option>选择预算</option>
+                    </select>
+                </div>
+                <div class="highsearch">
+                    <a href="#">高级搜索</a>
+                </div>
+                <div class="search">
+                    <button type="search">搜索</button>
+                </div>
+                
+            </div>
+            <img class="image"  href="#" src="./mitsui img/bg_top_3.jpg">
+        </div>
+        <div class="tips">
+        </div>
+        <div class="rectitle">极力推荐</div>
+        <div class="reccontent">
+            <img class="bigimg" src="./mitsui img/MFR-CN-1187-336-1 more than 100m.png">
+            <img class="midimgleft" src="./mitsui img/MFR-CN-586-196-1 中バナー(左).png">
+            <img class="midimgright" src="./mitsui img/MFR-CN-586-196-1 中バナー(右).png">
+            <img class="smallimg1" src="./mitsui img/MFR-CN-286-196-def.麻布.png">
+            <img class="smallimg2" src="./mitsui img/MFR-CN-286-196-def.市ヶ谷・四谷.png">
+            <img class="smallimg3" src="./mitsui img/MFR-CN-286-196-def.tip4_.png">
+            <img class="smallimg4" src="./mitsui img/MFR-CN-286-196-def.飯田橋・神楽坂_0.png">
+        </div>
+        <div class="news">
+            <div class="newstitle">最新消息</div>
+            <div class="news1">
+                <img src="./mitsui img/Investment Property.jpg">
+                <span>文章</span>
+                <div class="newscontent1">投资用房源</div>
+                <div class="newsbutton1">
+                    <button type="button">查看</button>
+                </div>
+            </div>
+            <div class="news2">
+                <img src="./mitsui img/CN-tokyo.jpg">
+                <span>新闻</span>
+                <div class="newscontent2">新年假期通知</div>
+                <div class="newsbutton2">
+                    <button type="button">查看</button>
+                </div>
+            </div>
+            <div class="news3">
+                <img src="./mitsui img/pixta_48816799_M.jpg">
+                <span>报告</span>
+                <div class="newscontent3">新年假期通知</div>
+                <div class="newsbutton3">
+                    <button type="button">查看</button>
+                </div>
+            </div>
+            <div class="news4">
+                <img src="./mitsui img/pixta_81058241_M (1).jpg">
+                <span>报告</span>
+                <div class="newscontent4">新年假期通知</div>
+                <div class="newsbutton4">
+                    <button type="button">查看</button>
+                </div>
+            </div>
+            <div class="searchmore">
+                <button type="button">看更多</button>
+            </div>
+            <div class="soldtitle">买卖流程</div>
+            <div class="buyandsell">
+            <div class="buy">
+                <div class="buytitle">
+                    <div class="buymessage">购买信息</div>
+                    <div class="buybu">
+                        <button type="button">详细介绍</button>
+                    </div>
+                    </div>
+                    <div class="buyimg">
+                        <img src="./mitsui img/buy.jpg">
+                    </div>
+            </div>
+            <div class="sell">
+                <div class="selltitle">
+                    <div class="sellmessage">销售信息</div>
+                    <div class="sellbu">
+                        <button type="button">详细介绍</button>
+                    </div>
+                    </div>
+                    <div class="sellimg">
+                        <img src="./mitsui img/sell.jpg">
+                    </div>
+            </div>
+        </div>
+            <div class="telephone">
+                <div class="teletitle">联系方式</div>
+                <div class="tele1">
+                    <h1>大陆</h1>
+                    <h2>400-120-1319</h2>
+                </div>
+                <div class="tele2">
+                    <h1>大陆</h1>
+                    <h2>400-120-1319</h2>
+                </div>
+                <div class="tele3">
+                    <h1>大陆</h1>
+                    <h2>400-120-1319</h2>
+                </div>
+                <div class="tele4">
+                    <h1>大陆</h1>
+                    <h2>400-120-1319</h2>
+                </div>
+                <div class="tele5">
+                    <h1>大陆</h1>
+                    <h2>400-120-1319</h2>
+                </div>
+                <div class="time">办公时间：10：00-18：00（日本时间）休息日：周六，周日和日本法定假日</div>
+                <div class="emailtitle">邮件咨询</div>
+                <div class="email">
+                    <button type="button" class="emailbutt1">购买</button>
+                    <button type="button" class="emailbutt2">售出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
