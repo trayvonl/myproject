@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            width: 100%;
+            height: 103px;
+        }
+
+        .header img {
+            float: left;
+            width: 329px;
+            height: 90px;
+            margin-left: 200px;
+        }
+
+        .reserveandlogin {
+            float: left;
+            width: 380px;
+            height: 100px;
+            margin-left: 400px;
+        }
+
+        .reserve {
+            float: left;
+            width: 200px;
+            height: 58px;
+        }
+
+        .reserve button {
+            width: 200px;
+            height: 39px;
+            background-color: rgb(108, 182, 0);
+            margin-top: 40px;
+        }
+
+        .reserve p {
+            width: 200px;
+            height: 17px;
+        }
+
+        .login {
+            float: left;
+            width: 180px;
+            height: 58px;
+        }
+
+        .login button {
+            width: 160px;
+            height: 39px;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+
+        .login p {
+            width: 160px;
+            height: 17px;
+        }
+
+        .headernav {
+            width: 100%;
+            height: 60px;
+            border-top: 2px solid rgb(204, 204, 204);
+            border-bottom: 2px solid rgb(204, 204, 204);
+
+        }
+
+        .headernavbox {
+            width: 1000px;
+            height: 60px;
+            margin-left: 200px;
+        }
+
+        .headernav ul {
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+        }
+
+        .headernav li {
+            float: left;
+        }
+
+        .headernav a {
+            display: block;
+            width: 140px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .headernav a:hover {
+            border-bottom: 4px solid rgb(254, 214, 0);
+        }
+        .main{
+            width: 100%;
+            height: 3770px;
+        }
+        .news{
+            width: 100%;
+            height: 120px;
+        }
+        .newscontent{
+            width: 1000px;
+            height: 100px;
+            margin-left: 200px;
+            margin-top: 10px;
+            background-color: rgb(247,246,239);
+        }
+        .imgdisplay{
+            position: relative;
+            width: 100%;
+            height: 470px;
+        }
+        #imgs{
+            position: absolute;
+            width: 1200;
+            height: 470px;
+            margin-left: 200px;
+        }
+        .lleft{
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            position: absolute;
+            margin-top: 235px;
+            margin-left: 50px;
+        }
+        .lleft img{
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+        }
+        .rright{
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            position: absolute;
+            margin-top: 235px;
+            margin-left: 1450px;
+        }
+        .rright img{
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+        }
+        .notice{
+            position: absolute;
+            width: 434px;
+            height: 380px;
+            background-color: white;
+            opacity:0.8;
+            margin-left: 300px;
+            margin-top: 40px;
+        }
+        .noticenav{
+            float: left;
+            width: 100px;
+            height: 380px;
+            line-height: 380px;
+            text-align: center;
+        }
+        .noticecontent{
+            float: left;
+            width: 334px;
+            height: 380px;
+        }
+        .bu1{
+            width: 334px;
+            height: 50px;
+        }
+        .bu1 button{
+            width: 300px;
+            height: 40px;
+            margin-left: 17px;
+            background-color: rgb(254,214,0);
+        }
+        .bu2{
+            width: 334px;
+            height: 50px;
+            margin-top: 10px;
+        }
+        .se2l{
+            float: left;
+            margin-left: 17px;
+            height: 30px;
+            width: 110px;
+        }
+        .se2r{
+            float: left;
+            margin-left: 10px;
+            width: 180px;
+            height: 30px;
+
+        }
+        .bu3{
+            width: 334px;
+            height: 50px;
+        }
+        .bu3 select{
+            width: 300px;
+            height: 30px;
+            margin-left: 17px;
+        }
+        .bu2{
+            width: 334px;
+            height: 50px;
+            margin-top: 10px;
+        }
+        .se4l{
+            float: left;
+            margin-left: 17px;
+            height: 30px;
+            width: 160px;
+        }
+        .se4r{
+            float: left;
+            margin-left: 10px;
+            width: 130px;
+            height: 30px;
+
+        }
+        .bu5{
+            width: 334px;
+            height: 60px;
+            margin-top: 50px;
+
+        }
+        .bu5 button{
+            width: 300px;
+            height: 50px;
+            margin-left: 17px;
+            background-color: rgb(93,156,0);
+        }
+        .intro{
+            width: 100%;
+            height: 600px;
+        }
+        .intro h1{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .intro img{
+            width: 472px;
+            height: 503px;
+            float: left;
+            margin-left: 10px;
+        }
+        .count{
+            width: 100%;
+            height: 650px;
+            margin-top: 40px;
+        }
+        .count h1{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .count img{
+            width: 474px;
+            height: 560px;
+            float: left;
+            margin-left: 10px;
+        }
+        .nessary{
+            width: 100%;
+            height: 600px;
+        }
+        .nessary h1{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nessary img{
+            width: 473px;
+            height: 462px;
+            float: left;
+            margin-left: 10px;
+        }
+        .morenews{
+            width: 100%;
+            height: 1000px;
+
+        }
+        .morenews h1{
+            text-align: center;
+        }
+        .morenewsbox{
+            width: 1000px;
+            height: 100px;
+            margin-left: 200px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .morenewstitle{
+            width: 1000px;
+            height: 50px;
+
+        }
+        .morenewstitle span{
+            display: inline-block;
+            width: 90px;
+            height: 30px;
+            background-color: rgb(254,214,0);
+            font-size: small;
+            margin-top: 15px;
+            text-align: center;
+            line-height: 30px;
+            float: left;
+        }
+        .morenewstitle p{
+            float: left;
+            margin-left: 20px;
+        }
+        .morenewslink{
+            width: 1000px;
+            height: 50px;
+            line-height: 50px;
+        }
+        .morenewsbu{
+            width: 100%;
+            height: 60px;
+            margin-top: 30px;
+        }
+        .morenewsbu button{
+            width: 100px;
+            height: 40px;
+            margin-left: 200px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./tc img/header_logo001.png">
+        <div class="reserveandlogin">
+            <div class="reserve">
+                <button type="button" style="color: white;">レンタカー予約</button>
+                <p>
+                    <a href="#"></a>
+                </p>
+            </div>
+            <div class="login">
+                <button type="button" style="color: white; background-color: rgb(254,214,0);">ログイン</button>
+                <p>
+                    <a href="#"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="headernav">
+        <div class="headernavbox">
+            <ul>
+                <li><a>出発店舗</a></li>
+                <li><a>出発店舗</a></li>
+                <li><a>出発店舗</a></li>
+                <li><a>出発店舗</a></li>
+                <li><a>出発店舗</a></li>
+                <li><a>出発店舗</a></li>
+                <li><a>出発店舗</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="news">
+            <div class="newscontent">【令和6年能登半島地震につきまして】<br>
+                令和6年能登半島地震により、犠牲となられた方々にお悔み申し上げるとともに、被災された方々に心よりお見舞い申し上げます。皆さまの安全と、被災地の一日も<br>早い復旧・復興をお祈りいたします。</div>
+        </div>
+        <div class="imgdisplay">
+            <img id="imgs" src="./tc img/top_main_ph075.png">
+            <div class="lleft">
+                <img src="./mitsui img2/OIP-C.jpg" alt="无法显示">           
+            </div>
+            <div class="rright">
+                <img src="./mitsui img2/OIP-C2.jpg" alt="无法显示">
+            </div>
+            <div class="notice">
+                <div class="noticenav">レンタカー</div>
+                    <div class="noticecontent">
+                        <h2 style="margin-left: 17px;">出発店舗・日時を指定する</h2>
+                        <div class="bu1">
+                            <button type="button">地図・キーワードから店舗を設定</button>
+                        </div>
+                        <div class="bu2">
+                            <select class="se2l" >
+                            </select>
+                            <select class="se2r"></select>
+                        </div>
+                        <div class="bu3">
+                            <select></select>
+                        </div>
+                        <div class="bu4">
+                            <select class="se4l" >
+                            </select>
+                            <select class="se4r"></select>
+                        </div>
+                        <div class="bu5">
+                            <button type="button" style="color: white;">予約する</button>
+                        </div>
+                    </div>
+            </div>
+           
+        </div>
+        <div class="intro">
+            <h1>和Times CAR RENTAL在日本美好旅程</h1>
+            <img class="img1" src="./tc img/QQ图片20240222130415.png">
+            <img class="img2" src="./tc img/QQ图片20240222130424.png">
+            <img class="img3" src="./tc img/QQ图片20240222130426.png">
+        </div>
+        <div class="count">
+            <h1>優惠活動</h1>
+            <img class="img1" src="./tc img/QQ图片20240222130840.png">
+            <img class="img2" src="./tc img/QQ图片20240222130844.png">
+        </div>
+        <div class="nessary">
+            <h1>駕駛必備文件</h1>
+            <img class="img1" src="./tc img/QQ图片20240222131417.png">
+            <img class="img2" src="./tc img/QQ图片20240222131420.png">
+            <img class="img3" src="./tc img/QQ图片20240222131423.png">
+        </div>
+        <div class="morenews">
+            <h1>店舗和服務資訊</h1>
+            <div class="morenewsbox">
+                <div class="morenewstitle">
+                    <span>優惠活動</span>
+                    <p>2023/12/04</p>
+                </div>
+                <div class="morenewslink">
+                    <a  href="#" style="color:rgb(37,120,160) ;">冬季，春季優惠套餐</a>
+                </div>
+            </div>
+            <div class="morenewsbox">
+                <div class="morenewstitle">
+                    <span>優惠活動</span>
+                    <p>2023/12/04</p>
+                </div>
+                <div class="morenewslink">
+                    <a  href="#" style="color:rgb(37,120,160) ;">冬季，春季優惠套餐</a>
+                </div>
+            </div>
+            <div class="morenewsbox">
+                <div class="morenewstitle">
+                    <span>優惠活動</span>
+                    <p>2023/12/04</p>
+                </div>
+                <div class="morenewslink">
+                    <a  href="#" style="color:rgb(37,120,160) ;">冬季，春季優惠套餐</a>
+                </div>
+            </div>
+            <div class="morenewsbox">
+                <div class="morenewstitle">
+                    <span>優惠活動</span>
+                    <p>2023/12/04</p>
+                </div>
+                <div class="morenewslink">
+                    <a  href="#" style="color:rgb(37,120,160) ;">冬季，春季優惠套餐</a>
+                </div>
+            </div>
+            <div class="morenewsbox">
+                <div class="morenewstitle">
+                    <span>優惠活動</span>
+                    <p>2023/12/04</p>
+                </div>
+                <div class="morenewslink">
+                    <a  href="#" style="color:rgb(37,120,160) ;">冬季，春季優惠套餐</a>
+                </div>
+            </div>
+            <div class="morenewsbox">
+                <div class="morenewstitle">
+                    <span>優惠活動</span>
+                    <p>2023/12/04</p>
+                </div>
+                <div class="morenewslink">
+                    <a  href="#" style="color:rgb(37,120,160) ;">冬季，春季優惠套餐</a>
+                </div>
+            </div>
+            <div class="morenewsbox">
+                <div class="morenewstitle">
+                    <span>優惠活動</span>
+                    <p>2023/12/04</p>
+                </div>
+                <div class="morenewslink">
+                    <a  href="#" style="color:rgb(37,120,160) ;">冬季，春季優惠套餐</a>
+                </div>
+            </div>
+            <div class="morenewsbu">
+                <button type="button">了解更多</button>
+            </div>
+        </div>
+        
+        <script>
+            var index=0;
+            var imgdata=['./tc img/top_main_ph075.png','./tc img/top_main_ph076.png']
+            var rright=document.getElementsByClassName("rright")[0];
+var lleft=document.getElementsByClassName("lleft")[0];
+var img=document.getElementById("imgs");
+rright.onclick=function(){
+index++;
+if(index==imgdata.length) index=0;
+img.setAttribute('src',imgdata[index]);
+}
+lleft.onclick=function(){
+if(index==0) index=imgdata.length;
+index--;
+img.setAttribute('src',imgdata[index]);
+}
+        </script>
+    </div>
+</body>
+
+</html>
