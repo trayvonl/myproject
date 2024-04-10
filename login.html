@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./demo.js"></script>
+    <style>
+.login{
+    width: 400px;
+    height: 300px;
+}
+.login-head{
+    width: 400px;
+    height: 50px;
+
+    border-bottom: 1px solid black;
+}
+.login-body{
+    width: 400px;
+    height: 250px;
+}
+.login-body input{
+    width: 380px;
+    margin-left: 10px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.login-butt{
+    width: 400px;
+    height: 100px;
+}
+.login-butt button{
+    width: 380px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: blue;
+}
+
+    </style>
+</head>
+<body>
+    <template>
+        <div class="login">
+            <div class="login-head">
+                login
+            </div>
+            <div class="login-body" >
+                <input type="text" placeholder="请输入账号">
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <div class="login-butt">
+                <button type="submit" @click="login" th:href="'http://localhost:8080/'+'${user.code}'">登录</button>
+            </div>
+        </div>
+    </template>
+    <script>
+export default{
+    data(){
+        return{
+            user:{
+                userName:"",
+                passWord:"",
+                code:"",
+            },
+        };
+    },
+    methods:{
+        login(){
+            $.ajax({
+                type: "post",
+                url: "url",
+                data: "data",
+                dataType: "json",
+                success: function (res) {
+                    this.user=res.data.data;
+                    if (user.code==0) {
+                        
+                    }else{
+
+                    }
+                }
+            });
+        },
+    },
+};
+    </script>
+</body>
+</html>
