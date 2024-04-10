@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="/demo-2/src/test/java/com/example/demo/UserMapper/UserMapper.java">
+<select id="getTimeByUserName" parameterType="string" resultType="/demo-2/src/test/java/com/example/demo/Bean/UserBean.java">
+		select gmt_created, gmt_modified
+        from user_table
+        where user_name = #{userName}
+</select>
+<select id="showAddressList" resultType="/demo-2/src/test/java/com/example/demo/Bean/AddressBook.java">
+		select projectName, updateTime,
+        from address_table
+        where ab_name = #{abName}
+
+</select>
+
+
+</mapper>
