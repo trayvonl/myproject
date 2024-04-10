@@ -1,0 +1,51 @@
+package com.example.demo.UserService.UserServiceImpl;
+
+import java.util.Date;
+
+import org.apache.commons.lang3.StringUtils;
+import org.assertj.core.util.DateUtil;
+import org.springframework.aot.nativex.NativeConfigurationWriter;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.Bean.AddressBook;
+import com.example.demo.Bean.UserBean;
+import com.example.demo.UserMapper.UserMapper;
+import com.example.demo.UserService.UserService;
+import com.example.demo.vo.EduResult;
+
+import jakarta.validation.constraints.AssertFalse.List;
+import oracle.net.jdbc.TNSAddress.AddressList;
+
+@Service
+public class UserServiceImpl implements UserService {
+	private UserMapper userMapper;
+	@Override
+	public UserBean login(String userName, String passWord) {
+		// TODO Auto-generated method stub
+	       if (StringUtils.isBlank(userName)) {
+	            throw new RuntimeException("账号不能为空");
+	        }
+	        if (StringUtils.isBlank(passWord)) {
+	            throw new RuntimeException("密码不能为空");
+	        }
+			UserBean userBean= userMapper.getTimeByUserName(userName);
+	        if (DateUtil.now().after(userBean.getGmtCreated())&&DateUtil.now().before(userBean.getGmtModified())) {
+	        	userBean.setCode(0);
+			}else {
+				userBean.setCode(1);
+			}
+			return userBean;
+
+	}
+	@Override
+	public AddressList showAddressList(String abName) {
+		// TODO Auto-generated method stub
+		List list=(List) userMapper.showAddressList(abName);
+		AddressList addressList=new AddressList;
+		addressList.setList(list);
+		return addressList;
+	}
+
+
+
+}
