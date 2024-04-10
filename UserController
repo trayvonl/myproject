@@ -1,0 +1,32 @@
+package com.example.demo.UserController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.UserService.UserService;
+import com.example.demo.vo.EduResult;
+
+import oracle.net.jdbc.TNSAddress.AddressList;
+
+@RestController
+@CrossOrigin
+@RequestMapping("/user")
+public class UserController {
+	 @Autowired
+	    private UserService userService;
+	 @RequestMapping("/login")
+	    public EduResult login(String userName,String passWord){
+		 userService.login(userName,passWord);
+	        return EduResult.ok();
+	    }
+	 @RequestMapping("/showAddressBook")
+	 public EduResult showAddressBook(@PathVariable String abName) {
+		 AddressList addressList= userService.showAddressList(abName);
+		return EduResult.ok(addressList);
+	}
+	 
+}
